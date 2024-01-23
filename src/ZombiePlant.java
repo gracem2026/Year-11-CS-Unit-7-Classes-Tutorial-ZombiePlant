@@ -10,10 +10,10 @@ public class ZombiePlant {
     }
     public void treat(int tr) {
         if (tr > 0) {
-            if (tr <= 10 && treatments > 0) {
+            if (tr <= potency && treatments > 0) {
                 treatments --;
             }
-            else if (tr > 10){
+            else if (tr > potency){
                 treatments ++;
             }
         }
